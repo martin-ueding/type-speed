@@ -48,7 +48,6 @@ def _parse_args():
     :rtype: Namespace
     """
     parser = argparse.ArgumentParser(description=__doc__)
-    #parser.add_argument('args', metavar='N', type=str, nargs='*', help='Positional arguments.')
 
     return parser.parse_args()
 
