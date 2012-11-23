@@ -11,9 +11,13 @@ __docformat__ = "restructuredtext en"
 def main():
     options = _parse_args()
 
+    print "When you are ready, press enter and type as fast as you can. When you are done, press enter again."
+
+    raw_input()
+
     start = datetime.datetime.now()
 
-    text = raw_input("Type as fast as you can and press enter:\n")
+    text = raw_input("Type!\n")
 
     end = datetime.datetime.now()
 
