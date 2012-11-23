@@ -20,19 +20,21 @@ def main():
     text = input("Type!\n")
 
     end = datetime.datetime.now()
-
     diff = end-start
-
     chars = len(text)
     time = float(diff.seconds)
-    speed = chars/time
 
-    print("You typed {chars:n} chars in {seconds:n} seconds. That is {speed:.1f} chars/second or {min:.1f} chars/minute.".format(
-        chars = chars,
-        seconds = time,
-        speed = speed,
-        min = speed * 60,
-    ))
+    try:
+        speed = chars/time
+    except ZeroDivisionError:
+        print("That was too short, please type more than a second.")
+    else:
+        print("You typed {chars:n} chars in {seconds:n} seconds. That is {speed:.1f} chars/second or {min:.1f} chars/minute.".format(
+            chars = chars,
+            seconds = time,
+            speed = speed,
+            min = speed * 60,
+        ))
 
 def _parse_args():
     """
