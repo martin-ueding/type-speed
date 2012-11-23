@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
+# Copyright © 2012 Martin Ueding <dev@martin-ueding.de>
 
 """
 Lets the user type something and calculates the typing speed.
