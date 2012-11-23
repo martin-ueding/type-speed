@@ -22,7 +22,7 @@ def main():
     end = datetime.datetime.now()
     diff = end-start
     chars = len(text)
-    time = float(diff.seconds)
+    time = diff.seconds
 
     try:
         speed = chars/time
