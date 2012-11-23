@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
@@ -11,13 +11,13 @@ __docformat__ = "restructuredtext en"
 def main():
     options = _parse_args()
 
-    print "When you are ready, press enter and type as fast as you can. When you are done, press enter again."
+    print("When you are ready, press enter and type as fast as you can. When you are done, press enter again.")
 
-    raw_input()
+    input()
 
     start = datetime.datetime.now()
 
-    text = raw_input("Type!\n")
+    text = input("Type!\n")
 
     end = datetime.datetime.now()
 
@@ -27,12 +27,12 @@ def main():
     time = float(diff.seconds)
     speed = chars/time
 
-    print "You typed {chars} in {seconds}. That is {speed} chars/second or {min} chars/minute.".format(
+    print("You typed {chars} in {seconds}. That is {speed} chars/second or {min} chars/minute.".format(
         chars = chars,
         seconds = time,
         speed = speed,
         min = speed * 60,
-    )
+    ))
 
 def _parse_args():
     """
