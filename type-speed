@@ -30,10 +30,10 @@ def main():
         print("That was too short, please type more than a second.")
     else:
         print("You typed {chars:n} chars in {seconds:n} seconds. That is {speed:.1f} chars/second or {min:.1f} chars/minute. And {words:.1f} words per minute.".format(
-            chars = chars,
-            seconds = time,
-            speed = speed,
-            min = speed * 60,
+            chars=chars,
+            seconds=time,
+            speed=speed,
+            min=speed * 60,
             words=len(text.split())/time*60.0
         ))
 
