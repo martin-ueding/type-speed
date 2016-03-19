@@ -1,10 +1,10 @@
-# Copyright © 2013 Martin Ueding <dev@martin-ueding.de>
+# Copyright © 2013, 2016 Martin Ueding <dev@martin-ueding.de>
 
 all: type-speed.1.gz
 
 install:
 	install -d "$(DESTDIR)/usr/bin"
-	install type-speed -t "$(DESTDIR)/usr/bin"
+	install type_speed.py -t "$(DESTDIR)/usr/bin"
 	install -d "$(DESTDIR)/usr/share/man/man1"
 	install type-speed.1.gz -t "$(DESTDIR)/usr/share/man/man1"
 
